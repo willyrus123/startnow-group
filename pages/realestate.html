@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STARTNOW REALESTATE </title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div class="header">
+  <img src="../assets/images/startnow_health.png" alt="StartNow Group Logo" class="logo">
+  <div class="navbar">
+    <a href="../index.html">HOME</a>
+    <a href="#">ABOUT COMPANY</a>
+    <div class="dropdown">
+      <button class="dropbtn">STARTNOW GROUP BUSINESS</button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="health.html">STARTNOW HEALTH</a>
+        <a href="digital.html">STARTNOW DIGITAL</a>
+        <a href="investment.html">STARTNOW INVESTMENT</a>
+        <a href="realestate.html">STARTNOW REALESTATE</a>
+      </div>
+    </div>
+    <a href="#">INVESTOR RELATIONS</a>
+    <a href="#">SUSTAINABILITY</a>
+    <a href="#">CORPORATE GOVERNANCE</a>
+    <a href="#">NEWS & MEDIA</a>
+  </div>
+</div>
+
+<div class="content">
+  <h1>STARTNOW REALESTATE</h1>
+  <p>
+    StartNow Real Estate is a premier division of the StartNow Group, dedicated to reshaping the real estate landscape through innovative development and management solutions. Our mission is to create value for our clients and communities by developing high-quality properties that blend modern aesthetics with functionality. StartNow Real Estate operates across a broad spectrum of the real estate market, including residential, commercial, and industrial properties.
+  </p>
+  
+  <!-- Project Section -->
+  <div class="project-section">
+    <!-- Residential Projects -->
+<div class="residential-projects">
+  <h2>Residential Projects</h2>
+  <!-- Salintara Condominium Apartment Project -->
+  <div class="project" id="salintara-condominium">
+    <h3>Salintara Condominium Apartment</h3>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Slides -->
+      <div class="mySlides fade">
+        <img src="/Users/willyrusamegevanon/Desktop/StartNow Group/assets/images/p1_salintara.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="/Users/willyrusamegevanon/Desktop/StartNow Group/assets/images/p2_salintara.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="/Users/willyrusamegevanon/Desktop/StartNow Group/assets/images/p3_salintara.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="/Users/willyrusamegevanon/Desktop/StartNow Group/assets/images/p4_salintara.jpg" style="width:50%">
+      </div>
+      <div class="mySlides fade">
+        <img src="/Users/willyrusamegevanon/Desktop/StartNow Group/assets/images/p5_salintara.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="/Users/willyrusamegevanon/Desktop/StartNow Group/assets/images/p6_salintara.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="/Users/willyrusamegevanon/Desktop/StartNow Group/assets/images/p7_salintara.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="/Users/willyrusamegevanon/Desktop/StartNow Group/assets/images/p8_salintara.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="/Users/willyrusamegevanon/Desktop/StartNow Group/assets/images/p9_salintara.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="/Users/willyrusamegevanon/Desktop/StartNow Group/assets/images/p10_salintara.jpg" style="width:100%">
+      </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    <p>Description of the Salintara Condominium Apartment...</p>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+    
+    <!-- Commercial Projects -->
+    <div class="commercial-projects">
+      <h2>Commercial Projects</h2>
+      <!-- Add commercial projects here -->
+    </div>
+    
+    <!-- Industrial Projects -->
+    <div class="industrial-projects">
+      <h2>Industrial Projects</h2>
+      <!-- Add industrial projects here -->
+    </div>
+  </div>
+</div>
+
+
+
+<script src="../js/scripts.js"></script>
+
+</body>
+</html>
